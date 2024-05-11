@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link href="estilo.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/imagens/chama.png" title="chama" class="logo"/>
+        </header>
+        <h2 class="titulo">Lista de Encomendas</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-cliente">
+                <tr class="cliente">
+                    <td>Gustavo</td>
+                    <td>Hd</td>
+                    <td class="quant">3</td>
+                    <td class="unit">400</td>
+                    <td class="tot">0</td>
+                </tr>
+                <tr class="cliente">
+                    <td>Pedro</td>
+                    <td>Placa de Video</td>
+                    <td class="quant">3</td>
+                    <td class="unit">300</td>
+                    <td class="tot">0</td>
+                </tr>
+                <tr class="cliente">
+                    <td>Almir</td>
+                    <td>SSD</td>
+                    <td class="quant">1</td>
+                    <td class="unit">a</td>
+                    <td class="tot">0</td>
+                </tr>
+                <tr class="cliente">
+                    <td>Alessandra</td>
+                    <td>Processador</td>
+                    <td class="quant">2</td>
+                    <td class="unit">500</td>
+                    <td class="tot">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="box">
+            <h2>Adicionar Nova Encomenda</h2>
+            <!--<formulario="">-->
+            <div class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">QTDE:</label>
+                <input type="text" id="email" name="email">
+                <label for="produto">Produto:</label>
+                <select id="produto" name="produto">
+                    <option value="Mouse Pad">Mouse Pad</option>
+                    <option value="PRO X SUPERLIGHT 2">PRO X SUPERLIGHT 2</option>
+                    <option value="RTX 3060">RTX 3060</option>
+                    <option value="RYZEN 7 5700x">RYZEN 7 5700x</option>
+                
+                </select>
+                <label for="valor_unitario">R$ Unitário:</label>
+                <input type="text" id="valor_unitario" name="valor_unitario">
+            </div>
+            <button type="submit">Enviar</button>
+            <!--</formularios>-->
+        </div>
+
+    <img src="assets/imagens/relogio.gif" alt="Gif" style="display: block; margin: 20px auto;">
+    <img src="assets/imagens/fogo.gif" alt="Gif" style="display: block; margin: 20px auto;">
+    <script src="JS/calcula_total.js"></script>
+    <script src="JS/formulario.js"></script>
+
+    </body>
+    </html>
