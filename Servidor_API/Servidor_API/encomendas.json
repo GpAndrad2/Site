@@ -1,0 +1,49 @@
+{
+    "encomendas":[
+        {
+            "nome": "Bruce Wayne",
+            "produto": "Pulseira de Cristal - Preta",
+            "qtde": 2,
+            "unitario": 20,
+            "total": 40
+        },
+
+        {
+            "nome": "Buzeira",
+            "produto": "Corrente de Ouro - 18K",
+            "qtde": 3,
+            "unitario": 40,
+            "total": 120
+
+        },
+
+        {
+            "nome": "Renato Cariani",
+            "produto": "Barrinha Bold",
+            "qtde": 8,
+            "unitario": 10,
+            "total": 80
+        },
+
+        {
+            "nome": "Cassio",
+            "produto": "Shamppo",
+            "qtde": 1,
+            "unitario": 50,
+            "total": 50
+        },
+
+        {
+            "nome": "Gabigol",
+            "produto": "Camisa do Corinthians",
+            "qtde": 1,
+            "unitario": 150,
+            "total": 150
+        }
+    ]
+
+
+
+
+
+}
