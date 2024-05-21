@@ -7,6 +7,6 @@ botaoBuscar.addEventListener("click", function(){
     var resposta = xhr .responseText;
     console.log(resposta);
     console.log(typeof resposta0);
-  })
-
+  });
+    xhr.send();
 })
