@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
 
-        
-
         // Se todos os campos estiverem preenchidos, continuar com o restante do código
 
         // Formatando o valor unitário como moeda
@@ -46,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        
     });
-
-
+    
 //doubleclik exclui linha adicionada no formulario
     var tabela = document.querySelector("table");
 

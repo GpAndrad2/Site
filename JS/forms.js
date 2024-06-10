@@ -14,6 +14,7 @@ function obtemEncomenda(dadosForm){
        qtde: dadosForm.qtde.value,
        produto: dadosForm.produto.value,
        unitario: dadosForm.unitario.value,
+       imagem: dadosForm.imagem.files[0]
 
     }
     return encomenda;

@@ -1,90 +1,159 @@
-<html>
-    <head>
-        <link href="estilo.css" rel="stylesheet">
-        
-        
-    </head>
-    <body>
-        <header>
-            <div class="logo_shoppe">
-                <img src="assets/imagens/pc.png" title="shoppe" class="logo"/>
-        </header>
-        <h2 class="titulo">Lista de Encomendas</h2>
-
-        <label for="filtrartabela">Filtrar</label>
-        <input type="text" id="filtrar-tabela" placeholder="Digite o nome da tabela">
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Valor Unitario</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody id="tabela-cliente">
-                <tr class="cliente">
-                    <td class="nome">Geovanny</td>
-                    <td>Tapete</td>
-                    <td class="quant">3</td>
-                    <td class="unit">4</td>
-                    <td class="tot">0</td>
-                </tr>
-                <tr class="cliente">
-                    <td class="nome">Julia</td>
-                    <td>jaqueta</td>
-                    <td class="quant">3</td>
-                    <td class="unit">35</td>
-                    <td class="tot">0</td>
-                </tr>
-                <tr class="cliente">
-                    <td class="nome">Luidy</td>
-                    <td>Colar</td>
-                    <td class="quant">10</td>
-                    <td class="unit">10</td>
-                    <td class="tot">0</td>
-                </tr>
-                <tr class="cliente">
-                    <td class="nome">Alessandra</td>
-                    <td>Pulseira de Ouro</td>
-                    <td class="quant">2</td>
-                    <td class="unit">50</td>
-                    <td class="tot">0</td>
-                </tr>
-            </tbody>
-        </table>
-        <button id="buscar-encomendas" class="botao">Buscar Encomenda</button>
-        <ul id="mensagens-erro"></ul>
-        <div class="box">
-            <h2>Adicionar Nova Encomenda</h2>
-            <!--<formulario="">-->
-            <div class="formulario">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="quantidade">QTDE:</label>
-                <input type="text" id="quantidade" name="quantidade">
-                <label for="produto">Produto:</label>
-                <select id="produto" name="produto">
-                    <option value="Tapete">Tapete</option>
-                    <option value="Jaqueta">Jaqueta</option>
-                    <option value="Colar">Colar</option>
-                    <option value="Pulseira">Pulseira de Ouro</option>
-                
-                </select>
-                <label for="valor_unitario">R$ Unitário:</label>
-                <input type="text" id="valor_unitario" name="valor_unitario">
-                 
-            </div>
-            <button type="submit">Enviar</button>
-            <!--</formularios>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Cacete</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo_shoppe">
+            <img src="assets/imagens/carro.png" title="shoppe" class="logo"/>
         </div>
-        <script src="JS/calcula_total.js"></script>
-        <script src="JS/formulario.js"></script>
-        <script src="JS/filtro.js"></script>
-        <script src="JS/buscar-encomenda.js"></script>
+    </header>
+    <h2 class="titulo">Lista de Encomendas</h2>
+
+    <label for="filtrartabela">Filtrar</label>
+    <input type="text" id="filtrar-tabela" placeholder="Digite o nome da tabela">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitario</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-cliente">
+            <tr class="cliente">
+                <td class="nome">Pedro</td>
+                <td class="prod">Turbina .50</td>
+                <td class="quant">1</td>
+                <td class="unit">2000</td>
+                <td class="tot">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Julia</td>
+                <td class="prod">Filtro Ar K&K Intake</td>
+                <td class="quant">3</td>
+                <td class="unit">450</td>
+                <td class="tot">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Leonardo</td>
+                <td class="prod">Intercooler Street 3</td>
+                <td class="quant">2</td>
+                <td class="unit">485</td>
+                <td class="tot">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Alessandro</td>
+                <td class="prod">Bomba de Combustivel - 15 Bar</td>
+                <td class="quant">2</td>
+                <td class="unit">240</td>
+                <td class="tot">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Bianca</td>
+                <td class="prod">Comando de válvula 300</td>
+                <td class="quant">2</td>
+                <td class="unit">1050</td>
+                <td class="tot">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Rebecca</td>
+                <td class="prod">Carburador Weber 40 </td>
+                <td class="quant">2</td>
+                <td class="unit">999</td>
+                <td class="tot">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button id="buscar-encomendas">Buscar Encomendas</button>
+        <button id="reproduzir-musica">Música</button>
+        <button id="btnAbrirPagina">Curiosidades</button>
+    </div>
+    
+
+    <script>
+        // Array de links
+        var links = [
+            'https://www.e-konomista.pt/intercooler/',
+            'https://blog.hipervarejo.com.br/turbina-motor-afinal-para-que-serve-essa-peca/',
+            'https://www.noticiasautomotivas.com.br/o-que-e-e-para-que-serve-o-carburador/',
+            'https://mundoeducacao.uol.com.br/fisica/enetendendo-motor-um-carro.htm',
+            'https://www.autotrader.com/',
+            'https://www.cars.com/',
+            'https://www.cargurus.com/',
+            'https://www.edmunds.com/',
+            'https://www.caranddriver.com/'
+        ];
+
+        var ultimoIndice = -1; // Guarda o índice do último link aberto
+
+        // Função para abrir link aleatório, exceto o último aberto
+        function abrirLink() {
+            var randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * links.length);
+            } while (randomIndex === ultimoIndice); // Garante que não seja o mesmo link
+
+            ultimoIndice = randomIndex; // Atualiza o último índice
+            window.open(links[randomIndex], '_blank');
+        }
+
+        // Associar a função ao clique do botão
+        document.getElementById('btnAbrirPagina').addEventListener('click', abrirLink);
+    </script>
+
+    <div class="box">
+        <h2>Adicionar Nova Encomenda</h2>
+        <div class="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="quantidade">QTDE:</label>
+            <input type="text" id="quantidade" name="quantidade">
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">
+                <option value="Turbina 50">Turbina 50</option>
+                <option value="Filtro de Ar KNG">Filtro de Ar KNG</option>
+                <option value="Intercooler">Intercooler</option>
+                <option value="Bomba de Combustivel 300cv">Bomba de Combustivel 300cv</option>
+                <option value="Comando de válvula 300">Comando de válvula 300</option>
+                <option value="Carburador Weber 40">Carburador Weber 40</option>
+            </select>
+            <label for="valor_unitario">R$ Unitário:</label>
+            <input type="text" id="valor_unitario" name="valor_unitario">
+        </div>
+        <button type="submit">Enviar</button>
+    </div>
+    
 
 
-    </body>
-    </html>
+    <script>
+    document.getElementById('reproduzir-musica').addEventListener('click', function() {
+        // URL da playlist aleatória do YouTube
+        var playlistAleatoria = 'https://radiosaovivo.net';
+    
+        // Abre a playlist em uma nova aba
+        window.open(playlistAleatoria, '_blank');
+    });
+    </script>
+     
+     <div class="footer">
+        <img src="assets/imagens/rodape.png" alt="Copyright" width="100"> <!-- Substitua o caminho pela localização real da sua imagem -->
+        &copy; 2024 Performance Tuner. Todos os direitos reservados.
+      </div>
+
+    <script src="JS/calcula_total.js"></script>
+    <script src="JS/formulario.js"></script>
+    <script src="JS/filtro.js"></script>
+    <script src="JS/buscar-encomenda.js"></script>
+    <script src="JS/reproduzir-musica.js"></script>
+</body>
+</html>

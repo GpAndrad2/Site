@@ -1,100 +1,206 @@
-.logo{
-    width: 15%;
-    
+body {
+  background-color: rgb(255, 255, 255);
+  color: black; /* Alterado para preto */
 }
-header{
-    background-color: rgb(241, 112, 0);
+
+.logo {
+  width: 25%;
+  margin: 0 auto; /* Centraliza o logo */
+  display: flex; /* Torna o container flexível */
+  justify-content: center; /* Centraliza horizontalmente */
 }
+
+header {
+  background-color: rgb(0, 0, 0);
+}
+
 table {
   border-collapse: collapse;
   border: 2px solid rgb(255, 255, 255);
   letter-spacing: 1px;
-  font-size: 1rem; /* Aumenta o tamanho da fonte para 1rem */
-  width: 100%; 
-  }
-  
-  td,th {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 20px 30px;
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte para 1.2rem */
-  }
-  
-  th {
-    background-color: rgb(255, 255, 255);
-  }
-  
-  td {
-    text-align: center;
-  }
-  
-  .titulo {
-    border-bottom: 1px solid black;
-  }
-  
-  .info-invalida {
-    background-color: red;
-  }
-  
-  /* Novo conjunto de estilos */
-  /* Estilos para a classe .box */
-  .box {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
-  
-  /* Estilos para o título dentro da classe .box */
-  .box h2 {
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para o formulário dentro da classe .box */
-  .box .formulario {
-    margin-bottom: 15px;
-  }
-  
-  /* Estilos para as etiquetas dentro da classe .box */
-  .box label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  /* Estilos para os campos de texto e seleção dentro da classe .box */
-  .box input[type="text"],
-  .box select {
-    width: calc(100% - 20px);
-    padding: 6px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-  
-  /* Estilos para o botão de envio dentro da classe .box */
-  .box button[type="submit"] {
-    background-color: rgb(255, 123, 0);
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  /* Estilos de foco para o botão de envio dentro da classe .box */
-  .box button[type="submit"]:hover {
-    background-color: orangered;
-  }
-  
-  #filtrar-tabela{
-    width: 19.5%;
-    height: 35px;
-    margin-bottom: 10px;
-  }
-  .invisivel{
-    display:none;
-  }
+  font-size: 1rem;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  color: black; /* Alterado para preto */
+}
+
+th {
+  background-color: rgb(255, 255, 255);
+  color: black; /* Altera a cor das letras do título da tabela para preto */
+  border: 2px solid rgb(0, 0, 0);
+  padding: 20px 30px;
+  font-size: 1.2rem;
+}
+
+td {
+  text-align: center;
+}
+
+.titulo {
+  border-bottom: 1px solid black;
+  color: black; /* Altera a cor do texto do título para preto */
+}
+
+.info-invalida {
+  background-color: rgb(255, 255, 255);
+  color: black; /* Alterado para preto */
+}
+
+/* Novo conjunto de estilos */
+/* Estilos para a classe .box */
+.box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  max-width: 400px;
+  margin: 20px auto 0;
+  color: black;
+}
+
+/* Estilos para o título dentro da classe .box */
+.box h2 {
+  margin-bottom: 10px;
+  color: black; /* Alterado para preto */
+}
+
+/* Estilos para o formulário dentro da classe .box */
+.box .formulario {
+  margin-bottom: 15px;
+}
+
+/* Estilos para as etiquetas dentro da classe .box */
+.box label {
+  display: block;
+  margin-bottom: 5px;
+  color: black; /* Alterado para preto */
+}
+
+/* Estilos para os campos de texto e seleção dentro da classe .box */
+.box input[type="text"],
+.box select {
+  width: calc(100% - 20px);
+  padding: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: black; /* Alterado para preto */
+}
+
+/* Estilos para o botão de envio dentro da classe .box */
+.box button[type="submit"] {
+  background-color: rgb(17, 41, 173);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Estilos de foco para o botão de envio dentro da classe .box */
+.box button[type="submit"]:hover {
+  background-color: blue;
+}
+
+#filtrar-tabela {
+  width: 19.5%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.invisivel {
+  display: none;
+}
+#reproduzir-musica {
+  background-color: rgb(18, 0, 100);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reproduzir-musica:hover {
+  background-color: blue;
+}
+#buscar-encomendas {
+  background-color: #130066;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#buscar-encomendas:hover {
+  background-color: blue;
+}
+
+#mensagens-erro {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mensagens-erro li {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px; 
+  background-color: black;
+  color: white; 
+  padding: 10px; 
+}
+.footer img {
+  display: block; 
+  margin: 0 auto 10px;
+}
+#c,
+#buscar-encomendas {
+  display: inline-block;
+  margin: 10px;
+}
+#btnAbrirPagina {
+  background-color: #130066; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+#btnAbrirPagina:hover {
+  background-color: blue; 
+}
+#buscar-encomendas,
+#reproduzir-musica,
+#btnAbrirPagina {
+  background-color: #130066;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; /* Adicionei margem à direita para separar os botões */
+  display: inline-block; /* Alterado para inline-block para colocar os botões um ao lado do outro */
+}
+
+#buscar-encomendas:hover,
+#reproduzir-musica:hover,
+#btnAbrirPagina:hover {
+  background-color: blue;
+}
